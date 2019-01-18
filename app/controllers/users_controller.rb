@@ -21,7 +21,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      redirect_to @user, notice: I18n.t('controllers.users.created')
+      redirect_to users_path, notice: I18n.t('controllers.users.created')
     else
       render :new
     end
@@ -30,7 +30,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   def update
     if @user.update(user_params)
-      redirect_to @user, notice: I18n.t('controllers.users.updated')
+      redirect_to users_path, notice: I18n.t('controllers.users.updated')
     else
       render :edit
     end
@@ -49,6 +49,6 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:name, :email, :avatar)
+    params.require(:user).permit(:name, :phone_number, :avatar, :password)
   end
 end

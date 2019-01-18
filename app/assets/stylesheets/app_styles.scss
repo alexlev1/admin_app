@@ -48,12 +48,65 @@ h1 {
   color: #007bff;
 }
 
-.btn-profile {
+
+// Список пользователей (таблица)
+
+.thead-blue {
   color: #fff;
-  background-color: #ff5f44;
-  border-color: #ff5f44;
+  background-color: #007bff;
 }
 
-.profile {
-  display: inline;
+.new-record {
+  color: #007bff;
+}
+
+.new-record:hover {
+  color: #007bff;
+}
+
+.user-actions {
+  padding: 0;
+  margin-left: 10px;
+  margin-bottom: 0
+}
+
+.user-action {
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+
+.user-edit {
+  color: #007bff;
+  font-size: 16px;
+  border-bottom: 1px #007bff dashed;
+}
+
+.user-edit:hover {
+  color: #007bff;
+  border-bottom: 1px #007bff dashed;
+  text-decoration: none;
+}
+
+.user-delete {
+  color: red;
+  font-size: 16px;
+  border-bottom: 1px red dashed;
+}
+
+.user-delete:hover {
+  color: red;
+  border-bottom: 1px red dashed;
+  text-decoration: none;
+}
+
+.btn-create-user {
+  color: #007bff;
+  background-color: #fff;
+  border-color: #007bff;
+}
+
+.btn-create-user:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
 }
