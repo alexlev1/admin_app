@@ -8,10 +8,13 @@ gem 'puma', '~> 3.11'
 
 gem 'bootstrap', '~> 4.1.1'
 gem 'uglifier', '>= 1.3.0'
+gem 'jquery-rails'
 
 gem 'rmagick'
 
 gem 'devise'
+gem 'devise-i18n'
+gem 'russian', '~> 0.6.0'
 
 gem 'turbolinks', '~> 5'
 

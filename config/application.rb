@@ -29,5 +29,9 @@ module AdminApp
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    I18n.config.available_locales = [:ru, :en]
+    config.i18n.default_locale = :ru
+    I18n.locale = config.i18n.default_locale
   end
 end

@@ -1,0 +1,59 @@
+p {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.panel-body {
+  min-width: 300px;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.panel-body-devise {
+  min-width: 300px;
+  max-width: 360px;
+}
+
+.search-form {
+  border: 2px solid #abacad;
+}
+
+.root-link {
+  text-decoration: none;
+  color: black;
+}
+
+.root-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.btn-sign-in {
+  color: #007bff;
+  background-color: #f7e4c6;
+  border-color: #007bff;
+}
+
+.btn-sign-inhover {
+  color: #007bff;
+}
+
+.btn-profile {
+  color: #fff;
+  background-color: #ff5f44;
+  border-color: #ff5f44;
+}
+
+.profile {
+  display: inline;
+}

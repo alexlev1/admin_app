@@ -1,0 +1,28 @@
+ru:
+  activerecord:
+    models:
+      user: 'Пользователь'
+      admin: 'Администратор'
+    attributes:
+      user:
+        email: 'Email'
+        name: 'Имя'
+        phone_number: 'Номер телефона'
+        avatar: 'Аватар'
+        password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
+      admin:
+        email: 'Email:'
+        password: 'Пароль:'
+        remember_me: 'Запомнить?'
+  controllers:
+    users:
+      created: 'Пользователь успешно создан!'
+      updated: 'Данные о пользователе успешно обновлены!'
+      deleted: 'Пользователь удалён'
+      error: 'Ошибка в пользователе!'
+
+    errors:
+      one: '%{count} ошибка'
+      few: '%{count} ошибки'
+      many: '%{count} ошибок'
