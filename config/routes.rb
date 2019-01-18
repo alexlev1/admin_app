@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   end
 
   resources :users, except: [:show]
+
+  namespace :api, defaults: { format: :json } do
+    resources :users, except: :destroy
+  end
 end
