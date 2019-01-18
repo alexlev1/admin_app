@@ -1,24 +1,19 @@
-# README
+# Admin App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Тестовое задание для компании Frogogo
 
-Things you may want to cover:
+В приложении реализовано:
 
-* Ruby version
+* Аутентификация для админа
 
-* System dependencies
+* CRUDL для администрирования пользователей
 
-* Configuration
+* API для взаимодействия мобильными пользователями с сервисом
 
-* Database creation
+## Доступы:
 
-* Database initialization
+Доступ к приложению по ссылке: https://adminz.herokuapp.com/
 
-* How to run the test suite
+Доступ к API: https://adminz.herokuapp.com/api/users
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Для обновления информации пользователя по API необходимо в параметрах передавать номер телефона и пароль.

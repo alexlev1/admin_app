@@ -12,20 +12,9 @@ class User < ApplicationRecord
 
   before_validation :phone_cleaner, only: :phone_number
 
-  before_validation :set_name, on: :create
-  before_validation :set_avatar, on: :create
-
   private
 
   def phone_cleaner
     self.phone_number.delete!(" +()-")
-  end
-
-  def set_name
-    self.name = "User" if self.name.blank?
-  end
-
-  def set_avatar
-    self.avatar = "avatar.jpg" if self.avatar.blank?
   end
 end
