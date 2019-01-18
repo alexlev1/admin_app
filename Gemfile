@@ -9,6 +9,10 @@ gem 'puma', '~> 3.11'
 gem 'bootstrap', '~> 4.1.1'
 gem 'uglifier', '>= 1.3.0'
 
+gem 'rmagick'
+
+gem 'devise'
+
 gem 'turbolinks', '~> 5'
 
 gem 'jbuilder', '~> 2.5'
