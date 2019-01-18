@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2019_01_18_204703) do
     t.string "name", default: "User", null: false
     t.string "phone_number", null: false
     t.string "password", null: false
-    t.string "avatar", default: "avatar.jpg", null: false
+    t.string "avatar"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["phone_number"], name: "index_users_on_phone_number", unique: true

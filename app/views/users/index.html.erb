@@ -1,45 +1,47 @@
 <h1 class="mt-4 mb-4">Список пользователей:</h1>
 
-<table class="table">
-  <thead сlass="thead-blue">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Аватар:</th>
-      <th scope="col">Имя пользователя:</th>
-      <th scope="col">Номер телефона:</th>
-      <th scope="col">Действия:</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% if @users.blank? %>
+<div class="table-responsive-sm">
+  <table class="table">
+    <thead сlass="thead-blue">
       <tr>
-        <td colspan="4" class="text-center ">
-          В базе ещё нет пользователей, вы можете <%= link_to 'создать создать нового пользователя', new_user_path, class: 'new-record' %>
-        </td>
+        <th scope="col">#</th>
+        <th scope="col">Аватар:</th>
+        <th scope="col">Имя:</th>
+        <th scope="col">Номер:</th>
+        <th scope="col">Действия:</th>
       </tr>
-    <% else %>
-      <% @users.each_with_index do |user, index| %>
-        <% count = index + 1 %>
+    </thead>
+    <tbody>
+      <% if @users.blank? %>
         <tr>
-          <th scope="row"><%= count %></th>
-          <td><%= user.avatar %></td>
-          <td><%= user.name %></td>
-          <td><%= user.phone_number %></td>
-          <td>
-            <ul class="user-actions">
-              <li class="user-action">
-                <%= link_to 'Редактировать', edit_user_path(user), class: 'user-edit'%>
-              </li>
-              <li class="user-action">
-                <%= link_to 'Удалить', user_path(user), method: :delete,
-                                data: { confirm: 'Вы точно уверены?' }, class: 'user-delete' %>
-              </li>
-            </ul>
+          <td colspan="4" class="text-center ">
+            В базе ещё нет пользователей, вы можете <%= link_to 'создать создать нового пользователя', new_user_path, class: 'new-record' %>
           </td>
         </tr>
+      <% else %>
+        <% @users.each_with_index do |user, index| %>
+          <% count = index + 1 %>
+          <tr>
+            <th scope="row"><%= count %></th>
+            <td><%= image_tag user_avatar(user), class: 'avatar' %></td>
+            <td><%= user.name %></td>
+            <td><%= user.phone_number %></td>
+            <td>
+              <ul class="user-actions">
+                <li class="user-action">
+                  <%= link_to 'Редактировать', edit_user_path(user), class: 'user-edit'%>
+                </li>
+                <li class="user-action">
+                  <%= link_to 'Удалить', user_path(user), method: :delete,
+                                  data: { confirm: 'Вы точно уверены?' }, class: 'user-delete' %>
+                </li>
+              </ul>
+            </td>
+          </tr>
+        <% end %>
       <% end %>
-    <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
+</div>
 <%= link_to 'Cоздать нового пользователя', new_user_path, class: 'btn btn-create-user' %>
 

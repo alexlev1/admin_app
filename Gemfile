@@ -11,6 +11,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 
 gem 'rmagick'
+gem 'carrierwave'
+gem 'fog-aws'
 
 gem 'devise'
 gem 'devise-i18n'

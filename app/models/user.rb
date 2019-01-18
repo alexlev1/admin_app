@@ -4,13 +4,13 @@ class User < ApplicationRecord
   validates :password, presence: true
   validates :password, length: { in: 6..30 }
 
-  validates :avatar, presence: true
-
   validates :phone_number, presence: true
   validates :phone_number, uniqueness: true
   validates :phone_number, format: { with: /\A\d{11,15}$\z/i }
 
   before_validation :phone_cleaner, only: :phone_number
+
+  mount_uploader :avatar, AvatarUploader
 
   private
 
