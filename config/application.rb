@@ -33,5 +33,6 @@ module AdminApp
     I18n.config.available_locales = [:ru, :en]
     config.i18n.default_locale = :ru
     I18n.locale = config.i18n.default_locale
-  end
+
+    config.assets.initialize_on_precompile = false
 end
