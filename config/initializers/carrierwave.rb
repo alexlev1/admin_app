@@ -10,6 +10,6 @@ if Rails.env.production?
       region: "us-east-2"
     }
 
-    config.fog_directory  = ENV['S3_BUCKET_NAME']
+    config.fog_directory = ENV['S3_BUCKET_NAME']
   end
 end
