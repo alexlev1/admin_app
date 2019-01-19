@@ -21,6 +21,8 @@ gem 'russian', '~> 0.6.0'
 gem 'turbolinks', '~> 5'
 
 gem 'jbuilder', '~> 2.5'
+gem 'rack-cors'
+gem 'rack-attack'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
